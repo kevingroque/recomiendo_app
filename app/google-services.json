@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "847702786459",
+    "firebase_url": "https://recomiendoapp-fb45c.firebaseio.com",
+    "project_id": "recomiendoapp-fb45c",
+    "storage_bucket": "recomiendoapp-fb45c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847702786459:android:7651deb7f077ac14",
+        "android_client_info": {
+          "package_name": "com.huich.roque.app.recomiendo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847702786459-4r2iloi22gjvfitvlsp3m6c6vuejnrev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.huich.roque.app.recomiendo_app",
+            "certificate_hash": "c296d0606e5bc5929951c019323a055bc05b36dc"
+          }
+        },
+        {
+          "client_id": "847702786459-57vpnq4i9ffrki0guflbip3ofb21batq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcI1CYXbxXT66DRHOsG20AEDRFTBU5t24"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847702786459-57vpnq4i9ffrki0guflbip3ofb21batq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
