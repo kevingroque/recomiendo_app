@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_login_icon"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_login_googlebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_login_icon"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"/>
+
+    <Button
+        android:id="@+id/btn_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login_googlebutton"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:text="Entrar con email"
+        android:onClick="showDialog"/>
+
+    <TextView
+        android:id="@+id/txt_login_goregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:text="Registrate aquí"
+        android:textColor="@android:color/holo_blue_dark"
+         android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:onClick="goRegister"/>
+
+    <ProgressBar
+        android:id="@+id/pb_login_progressbar"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_below="@id/img_login_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

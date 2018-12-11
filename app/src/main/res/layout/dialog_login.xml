@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageButton
+        android:id="@+id/img_dialoglogin_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/ic_window_close" />
+
+    <RelativeLayout
+        android:layout_below="@id/img_dialoglogin_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="24dp"
+        android:paddingEnd="24dp">
+
+        <EditText
+            android:id="@+id/edt_dialoglogin_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:background="@drawable/edit_text_border"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/edt_dialoglogin_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_dialoglogin_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:background="@drawable/edit_text_border"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/btn_dialoglogin_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_dialoglogin_password"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/btn_dialoglogin_login"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent" />
+
+
+        <TextView
+
+            android:id="@+id/txt_dialoglogin_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/divider"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:text="Necesitas tener creada una cuenta para iniciar la aplicación"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/btn_dialoglogin_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_dialoglogin_info"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="15dp"
+            android:background="@color/colorPrimary"
+            android:paddingTop="15dp"
+            android:text="Registrate"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:onClick="goRegister"/>
+    </RelativeLayout>
+</RelativeLayout>

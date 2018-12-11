@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activities.SetupActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_setup_profile"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/ic_face_happy"
+        android:layout_centerHorizontal="true"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_setup_profile"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/ll_setup_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/edt_setup_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:background="@drawable/edit_text_border"
+                android:hint="Nombres"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edt_setup_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:background="@drawable/edit_text_border"
+                android:hint="Apellidos"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edt_setup_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:background="@drawable/edit_text_border"
+                android:hint="Telefono"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:weightSum="5">
+
+                <EditText
+                    android:id="@+id/edt_setup_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:ems="10"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="Direccion"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <ImageButton
+                    android:id="@+id/img_setup_getAdreess"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_weight="4"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/edit_text_border"
+                    app:srcCompat="@drawable/ic_location_placeholder"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_setup_addData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Registrar"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/pb_setup_progressbar"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_below="@id/img_login_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

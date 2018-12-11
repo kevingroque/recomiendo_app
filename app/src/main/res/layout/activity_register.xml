@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activities.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/img_login_icon"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_login_icon"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/ll_register_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/edt_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:background="@drawable/edit_text_border"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edt_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:background="@drawable/edit_text_border"
+                android:hint="Contraseña"
+                android:inputType="textVisiblePassword"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edt_register_confimrpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:background="@drawable/edit_text_border"
+                android:hint="Confirmar contraseña"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_register_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Registrar"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/pb_register_progressbar"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_below="@id/img_login_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
